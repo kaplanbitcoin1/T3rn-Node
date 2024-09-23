@@ -4,7 +4,7 @@
 ### Bu ağlarda 0.1'den fazla token bulundurmak gerekiyor. (arbitrum-sepolia,base-sepolia,optimism-sepolia,l1rn) 
 
 
-### [Faucet](https://holesky.eigenlayer.xyz/operator/0x2B6B967A90985190822EdbbBB1A371Ad28F48bc2)
+### [Faucet](https://faucet.brn.t3rn.io/)
 
 
 
