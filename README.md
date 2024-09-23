@@ -1,4 +1,4 @@
-# T3rn projesinin Node'unu birkaç işlemle kuralım.
+# [T3rn](https://www.t3rn.io/) projesinin Node'unu birkaç işlemle kuralım.
 
 
 # Bu ağlarda 0.1'den fazla token bulundurmak gerekiyor. (arbitrum-sepolia,base-sepolia,optimism-sepolia,l1rn) 
