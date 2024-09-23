@@ -4,7 +4,7 @@
 * Bu ağlarda 0.1'den fazla token bulundurmak gerekiyor. (arbitrum-sepolia,base-sepolia,optimism-sepolia,l1rn) 
 
 
-### [Faucet](https://faucet.brn.t3rn.io/)
+* [Faucet](https://faucet.brn.t3rn.io/)
 
 
 
