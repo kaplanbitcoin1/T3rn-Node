@@ -1,7 +1,9 @@
-### T3rn Node'u scprict ile kolayca kuralım.
+### T3rn projesinin Node'unu scprict ile kolayca kuralım.
+
+### Bu ağlarda 0.1'den fazla token bulundurun. (arbitrum-sepolia,base-sepolia,blast-sepolia,optimism-sepolia,l1rn) 
 
 
-* Kurulum için Script dosyasını oluşturalım
+### Kurulum için Script dosyasını oluşturalım
 
 ```shell
 nano setup_executor.sh
