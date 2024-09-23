@@ -34,7 +34,7 @@ cd executor/executor/bin || exit
 
 
 
-* Tek komut girip Private Key yazalım
+* Tek komut girip Private Key yazalım 🧨
 
 
 ```console
@@ -93,9 +93,10 @@ sudo systemctl start executor.service
 
 
 * Log kontrol
+
 ```console
 sudo journalctl -u executor.service -f
 ```
 
-* Ufak bir yıldız bırakırsan sevinirim
+* Ufak bir yıldız bırakırsan sevinirim 🐅
 
