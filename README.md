@@ -4,16 +4,16 @@
 
 [Faucet](https://holesky.eigenlayer.xyz/operator/0x2B6B967A90985190822EdbbBB1A371Ad28F48bc2)
 
-# Sistemi güncelleyelim
+* Sistemi güncelleyelim
 
-```
+```shell
 sudo apt update -q && sudo apt upgrade -qy
 ```
 
 
-# Gerekli Binary dosyasını indirelim
+* Gerekli Binary dosyasını indirelim
 
-```
+```shell
 LATEST_VERSION=$(curl -s https://api.github.com/repos/t3rn/executor-release/releases/latest | grep 'tag_name' | cut -d\" -f4)
 EXECUTOR_URL="https://github.com/t3rn/executor-release/releases/download/${LATEST_VERSION}/executor-linux-${LATEST_VERSION}.tar.gz"
 curl -L -o executor-linux-${LATEST_VERSION}.tar.gz $EXECUTOR_URL
@@ -22,7 +22,7 @@ curl -L -o executor-linux-${LATEST_VERSION}.tar.gz $EXECUTOR_URL
 
 # Binary'i uygun dosya yoluna çıkartalım
 
-```
+```shell
 tar -xzvf executor-linux-${LATEST_VERSION}.tar.gz
 rm -rf executor-linux-${LATEST_VERSION}.tar.gz
 cd executor/executor/bin || exit
@@ -33,14 +33,14 @@ cd executor/executor/bin || exit
 # Tek komut girip Private Key yazalım
 
 
-```
+```shell
 read -p "Metamask Özel Anahtarınızı girin (0x ön eki olmadan): " PRIVATE_KEY_LOCAL
 PRIVATE_KEY_LOCAL=${PRIVATE_KEY_LOCAL#0x}
 ```
 
 # Değişkenleri ayarlayalım
 
-```
+```shell
 export NODE_ENV=testnet
 export LOG_LEVEL=info
 export LOG_PRETTY=false
@@ -50,7 +50,7 @@ export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,l1rn'
 
 # Service dosyasını oluşturalım
 
-```
+```shell
 SERVICE_FILE="/etc/systemd/system/executor.service"
 sudo bash -c "cat > $SERVICE_FILE" <<EOL
 [Unit]
@@ -79,13 +79,13 @@ EOL
 
 
 
-```
+```shell
 sudo systemctl daemon-reload
 sudo systemctl enable executor.service
 sudo systemctl start executor.service
 ```
 
-```
+```shell
 # Logları göster
 sudo journalctl -u executor.service -f
 ```
