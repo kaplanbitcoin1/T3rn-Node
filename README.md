@@ -1,12 +1,14 @@
 * T3rn Node'u scprict ile kolayca kuralım.
 
 
-```
-setup_executor.sh
-```
 
 
 ```
+nano setup_executor.sh
+```
+
+
+```shell
 #!/bin/bash
 
 log() {
@@ -135,4 +137,17 @@ start_service
 display_log
 ```
 
+* Çalışma izni verelim.
+
+```
+chmod +x setup_executor.sh
+```
+
+
+
+* Kurulumu başlatalım
+
+```
+./setup_executor.sh
+```
 
