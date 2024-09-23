@@ -91,6 +91,8 @@ sudo systemctl start executor.service
 
 * İşlem tamamdır 🐅
 
+
+* Log kontrol
 ```console
 sudo journalctl -u executor.service -f
 ```
