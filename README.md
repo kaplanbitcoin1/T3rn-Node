@@ -1,3 +1,8 @@
+
+![1](https://github.com/user-attachments/assets/26bffc22-fd35-4388-975a-72de3009ec75)
+
+
+
 # [T3rn](https://www.t3rn.io/) projesinin Node'unu birkaç işlemle kuralım.
 
 
