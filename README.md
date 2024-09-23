@@ -97,4 +97,5 @@ sudo systemctl start executor.service
 sudo journalctl -u executor.service -f
 ```
 
+* Ufak bir yıldız bırakırsan sevinirim
 
