@@ -7,7 +7,7 @@
 nano setup_executor.sh
 ```
 
-* Tek komut yapıştırıyoruz içerisine. CommandX-CommandY Enter
+### Tek komut yapıştırıyoruz içerisine. CommandX-CommandY Enter
 
 ```shell
 #!/bin/bash
@@ -138,7 +138,7 @@ start_service
 display_log
 ```
 
-* Çalışma izni verelim.
+### Çalışma izni verelim.
 
 ```
 chmod +x setup_executor.sh
@@ -146,9 +146,17 @@ chmod +x setup_executor.sh
 
 
 
-* Kurulumu başlatalım
+### Kurulumu başlatalım
 
 ```
 ./setup_executor.sh
 ```
 
+
+### Private Key Girin. İşlem tamamdır 🐅
+
+### Log kontrolü
+
+```
+sudo journalctl -u executor.service -f
+```
