@@ -24,7 +24,7 @@ curl -L -o executor-linux-${LATEST_VERSION}.tar.gz $EXECUTOR_URL
 ```
 
 
-# Binary'i uygun dosya yoluna çıkartalım
+* Binary'i uygun dosya yoluna çıkartalım
 
 ```console
 tar -xzvf executor-linux-${LATEST_VERSION}.tar.gz
@@ -34,7 +34,7 @@ cd executor/executor/bin || exit
 
 
 
-# Tek komut girip Private Key yazalım
+* Tek komut girip Private Key yazalım
 
 
 ```console
@@ -42,7 +42,7 @@ read -p "Metamask Özel Anahtarınızı girin (0x ön eki olmadan): " PRIVATE_KE
 PRIVATE_KEY_LOCAL=${PRIVATE_KEY_LOCAL#0x}
 ```
 
-# Değişkenleri ayarlayalım
+* Değişkenleri ayarlayalım
 
 ```console
 export NODE_ENV=testnet
@@ -52,7 +52,7 @@ export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,l1rn'
 ```
 
 
-# Service dosyasını oluşturalım
+* Service dosyasını oluşturalım
 
 ```console
 SERVICE_FILE="/etc/systemd/system/executor.service"
@@ -79,7 +79,7 @@ EOL
 ```
 
 
-# Servisi başlat
+* Servisi başlat
 
 
 
