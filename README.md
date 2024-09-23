@@ -162,3 +162,97 @@ chmod +x setup_executor.sh
 ```
 sudo journalctl -u executor.service -f
 ```
+
+
+
+
+
+
+
+# Sistemi güncelleyelim
+
+```
+sudo apt update -q && sudo apt upgrade -qy
+```
+
+
+# Gerekli Binary dosyasını indirelim
+
+```
+LATEST_VERSION=$(curl -s https://api.github.com/repos/t3rn/executor-release/releases/latest | grep 'tag_name' | cut -d\" -f4)
+EXECUTOR_URL="https://github.com/t3rn/executor-release/releases/download/${LATEST_VERSION}/executor-linux-${LATEST_VERSION}.tar.gz"
+curl -L -o executor-linux-${LATEST_VERSION}.tar.gz $EXECUTOR_URL
+```
+
+
+# Binary'i uygun dosya yoluna çıkartalım
+
+```
+tar -xzvf executor-linux-${LATEST_VERSION}.tar.gz
+rm -rf executor-linux-${LATEST_VERSION}.tar.gz
+cd executor/executor/bin || exit
+```
+
+
+
+# Tek komut girip Private Key yazalım
+
+
+```
+read -p "Metamask Özel Anahtarınızı girin (0x ön eki olmadan): " PRIVATE_KEY_LOCAL
+PRIVATE_KEY_LOCAL=${PRIVATE_KEY_LOCAL#0x}
+```
+
+# Değişkenleri ayarlayalım
+
+```
+export NODE_ENV=testnet
+export LOG_LEVEL=info
+export LOG_PRETTY=false
+export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,l1rn'
+```
+
+
+# Service dosyasını oluşturalım
+
+```
+SERVICE_FILE="/etc/systemd/system/executor.service"
+sudo bash -c "cat > $SERVICE_FILE" <<EOL
+[Unit]
+Description=Executor Servisi
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/root/executor/executor
+Environment="NODE_ENV=testnet"
+Environment="LOG_LEVEL=info"
+Environment="LOG_PRETTY=false"
+Environment="PRIVATE_KEY_LOCAL=0x$PRIVATE_KEY_LOCAL"
+Environment="ENABLED_NETWORKS=$ENABLED_NETWORKS"
+ExecStart=/root/executor/executor/bin/executor
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
+EOL
+```
+
+
+# Servisi başlat
+
+
+
+```
+sudo systemctl daemon-reload
+sudo systemctl enable executor.service
+sudo systemctl start executor.service
+```
+
+```
+# Logları göster
+sudo journalctl -u executor.service -f
+```
+
+
