@@ -69,7 +69,7 @@ set_environment_variables() {
     export NODE_ENV=testnet
     export LOG_LEVEL=info
     export LOG_PRETTY=false
-    export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,blast-sepolia,optimism-sepolia,l1rn'
+    export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,l1rn'
     log "INFO" "Çevre değişkenleri ayarlandı: NODE_ENV=$NODE_ENV, LOG_LEVEL=$LOG_LEVEL, LOG_PRETTY=$LOG_PRETTY"
 }
 
