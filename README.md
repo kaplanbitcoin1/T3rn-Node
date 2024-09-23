@@ -79,7 +79,7 @@ EOL
 ```
 
 
-* Servisi başlat
+* Son adımlar
 
 
 
@@ -89,8 +89,9 @@ sudo systemctl enable executor.service
 sudo systemctl start executor.service
 ```
 
+* İşlem tamamdır 🐅
+
 ```console
-# Logları göster
 sudo journalctl -u executor.service -f
 ```
 
