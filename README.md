@@ -1,12 +1,13 @@
-* T3rn Node'u scprict ile kolayca kuralım.
+### T3rn Node'u scprict ile kolayca kuralım.
 
 
+* Kurulum için Script dosyasını oluşturalım
 
-
-```
+```shell
 nano setup_executor.sh
 ```
 
+* Tek komut yapıştırıyoruz içerisine. CommandX-CommandY Enter
 
 ```shell
 #!/bin/bash
