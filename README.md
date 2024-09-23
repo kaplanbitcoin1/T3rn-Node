@@ -24,7 +24,7 @@ curl -L -o executor-linux-${LATEST_VERSION}.tar.gz $EXECUTOR_URL
 ```
 
 
-* Binary'i uygun dosya yoluna çıkartalım
+* Binary'i uygun dosya yoluna çıkaralım
 
 ```console
 tar -xzvf executor-linux-${LATEST_VERSION}.tar.gz
