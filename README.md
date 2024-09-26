@@ -12,14 +12,14 @@
 
 
 
-*  Update The System
+*  Update the Server
 
 ```console
 sudo apt update -q && sudo apt upgrade -qy
 ```
 
 
-* Gerekli Binary dosyasını indirelim
+* Download the necessary binary file
 
 ```console
 LATEST_VERSION=$(curl -s https://api.github.com/repos/t3rn/executor-release/releases/latest | grep 'tag_name' | cut -d\" -f4)
@@ -28,7 +28,7 @@ curl -L -o executor-linux-${LATEST_VERSION}.tar.gz $EXECUTOR_URL
 ```
 
 
-* Binary'i uygun dosya yoluna çıkaralım
+* Extract the binary to the appropriate file path
 
 ```console
 tar -xzvf executor-linux-${LATEST_VERSION}.tar.gz
@@ -38,7 +38,7 @@ cd executor/executor/bin || exit
 
 
 
-* Tek komut girip Private Key yazalım 🧨
+* Enter a single command and write the private key 🧨
 
 
 ```console
