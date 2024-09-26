@@ -2,8 +2,7 @@
 ![1](https://github.com/user-attachments/assets/26bffc22-fd35-4388-975a-72de3009ec75)
 
 
-
-* [T3rn](https://www.t3rn.io/) projesinin Node'unu birkaç işlemle kuralım. Sistem gereksinimleri düşük olduğu için herhangi bir sunucuya sıkıştırabilirsiniz. 
+* Let's set up the Node for the [T3rn](https://www.t3rn.io/) project with a few operations. Since the system requirements are low, you can run it on any server.
 
 
 * NOT: Bu ağlarda 0.1'den fazla token bulundurmak gerekiyor. (Arbitrum-sepolia, Base-sepolia, Optimism-sepolia, L1rn) 
