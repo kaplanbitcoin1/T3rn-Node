@@ -46,7 +46,7 @@ read -p "Metamask Özel Anahtarınızı girin (0x ön eki olmadan): " PRIVATE_KE
 PRIVATE_KEY_LOCAL=${PRIVATE_KEY_LOCAL#0x}
 ```
 
-* Değişkenleri ayarlayalım
+* Set the variables
 
 ```console
 export NODE_ENV=testnet
@@ -56,7 +56,7 @@ export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,l1rn'
 ```
 
 
-* Service dosyasını oluşturalım
+* Create the service file
 
 ```console
 SERVICE_FILE="/etc/systemd/system/executor.service"
@@ -83,7 +83,7 @@ EOL
 ```
 
 
-* Son adımlar
+* Final steps
 
 
 
@@ -93,7 +93,7 @@ sudo systemctl enable executor.service
 sudo systemctl start executor.service
 ```
 
-* İşlem tamamdır 🐅
+* The process is complete 🐅
 
 
 * Log kontrol
@@ -102,5 +102,5 @@ sudo systemctl start executor.service
 sudo journalctl -u executor.service -f
 ```
 
-* Ufak bir yıldız bırakırsan sevinirim 🐅
+* I would appreciate it if you leave a small star 🐅
 
