@@ -38,7 +38,7 @@ cd executor/executor/bin || exit
 
 
 
-* Enter a single command and write the private key 🧨
+# Enter a single command and write the private key 🧨
 
 
 ```console
@@ -46,7 +46,7 @@ read -p "Metamask Özel Anahtarınızı girin (0x ön eki olmadan): " PRIVATE_KE
 PRIVATE_KEY_LOCAL=${PRIVATE_KEY_LOCAL#0x}
 ```
 
-* Set the variables
+# Set the variables
 
 ```console
 export NODE_ENV=testnet
@@ -56,7 +56,7 @@ export ENABLED_NETWORKS='arbitrum-sepolia,base-sepolia,optimism-sepolia,l1rn'
 ```
 
 
-* Create the service file
+# Create the service file
 
 ```console
 SERVICE_FILE="/etc/systemd/system/executor.service"
