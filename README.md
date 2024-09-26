@@ -5,7 +5,7 @@
 * Let's set up the Node for the [T3rn](https://www.t3rn.io/) project with a few operations. Since the system requirements are low, you can run it on any server.
 
 
-* NOT: Bu ağlarda 0.1'den fazla token bulundurmak gerekiyor. (Arbitrum-sepolia, Base-sepolia, Optimism-sepolia, L1rn) 
+* NOTE: You need to hold more than 0.1 tokens on these networks. (Arbitrum-sepolia, Base-sepolia, Optimism-sepolia, L1rn)
 
 
 * [Faucet](https://faucet.brn.t3rn.io/)
