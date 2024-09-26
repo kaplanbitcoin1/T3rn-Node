@@ -12,7 +12,7 @@
 
 
 
-*  Update the Server
+#  Update the Server
 
 ```console
 sudo apt update -q && sudo apt upgrade -qy
