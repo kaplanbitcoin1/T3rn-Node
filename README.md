@@ -96,11 +96,11 @@ sudo systemctl start executor.service
 # The process is complete 🐅
 
 
-* Log kontrol
+# Log kontrol
 
 ```console
 sudo journalctl -u executor.service -f
 ```
 
-* I would appreciate it if you leave a small star 🐅
+# I would appreciate it if you leave a small star 🐅
 
