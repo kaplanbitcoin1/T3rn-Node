@@ -19,7 +19,7 @@ sudo apt update -q && sudo apt upgrade -qy
 ```
 
 
-* Download the necessary binary file
+# Download the necessary binary file
 
 ```console
 LATEST_VERSION=$(curl -s https://api.github.com/repos/t3rn/executor-release/releases/latest | grep 'tag_name' | cut -d\" -f4)
@@ -28,7 +28,7 @@ curl -L -o executor-linux-${LATEST_VERSION}.tar.gz $EXECUTOR_URL
 ```
 
 
-* Extract the binary to the appropriate file path
+# Extract the binary to the appropriate file path
 
 ```console
 tar -xzvf executor-linux-${LATEST_VERSION}.tar.gz
