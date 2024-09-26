@@ -93,7 +93,7 @@ sudo systemctl enable executor.service
 sudo systemctl start executor.service
 ```
 
-# The process is complete 🐅
+* The process is complete 🐅
 
 
 # Log kontrol
