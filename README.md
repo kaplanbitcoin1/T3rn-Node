@@ -12,7 +12,7 @@
 
 
 
-* Sistemi güncelleyelim
+*  Update The System
 
 ```console
 sudo apt update -q && sudo apt upgrade -qy
