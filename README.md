@@ -11,7 +11,7 @@
 * [Faucet](https://faucet.brn.t3rn.io/)
 
 
-
+ 
 #  Update the Server
 
 ```console
